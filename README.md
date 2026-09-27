@@ -24,7 +24,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: unable to create native t
   at com.machingclee.Main.main(Main.java:21)
 ```
 
-then try to switch back the to the virtual thread `ThreadFactory`, and tries to see actually how many threads is in use from the `ForkJoinPool`. The result is quite surprising.
+then try to switch back to the virtual thread `ThreadFactory`, and tries to see actually how many threads is in use from the `ForkJoinPool`. The result is quite surprising.
 
 ## Experiment with the real network call
 
