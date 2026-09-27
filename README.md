@@ -8,7 +8,7 @@ into
 ```java
 var factory = Thread.ofPlatform().name("io-testing", 0).factory();
 ```
-and try to adjust the number `NUM_OF_REQUESTS` that exceeds your limit (`ulimit -n`) in your local machine. 
+and try to adjust the number `NUM_OF_REQUESTS` that exceeds your limit (`ulimit -n`) in your local machine. In my case my macbook air M4 with 32GB ram has an hard limit of 10240 threads, so I choose `NUM_OF_REQUESTS = 10300`.
 
 At the point you can catch
 
